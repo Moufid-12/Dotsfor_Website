@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -29,6 +29,7 @@
   <link href="../../vendors/loaders.css/loaders.min.css" rel="stylesheet">
   <link href="../../assets/css/theme.css" rel="stylesheet" />
   <link href="../../assets/css/user.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets\css\translatehid.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -92,15 +93,34 @@
               <a class="nav-link" href="../../pages/contact.html" role="button">Contact</a>
             </li>
           </ul>
-          <a
-            class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
-          <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block" style="margin-left: 12px;">EN</a>
-          <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block" style="margin-left: 12px;">JPN</a>
-
+          <div class="d-none d-sm-block" style="margin-left: auto;">
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+              class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
+          </div>
+          <div class="d-bloc d-sm-none" style="margin-left: 12px;">
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+              class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
+          </div>
+          <div class="" style="margin-left: 12px;">
+            <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0"
+              href="javascript:void()" onclick="window.location.hash='#googtrans(en)';location.reload();">EN</a>
+          </div>
+          <div class="" style="margin-left: 12px;">
+            <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0 "
+              href="javascript:void()" onclick="window.location.hash='#googtrans(ja)';location.reload();">JPN</a>
+          </div>
         </div>
       </nav>
     </div>
   </div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
   <!-- ===============================================-->
   <!--    Main Content-->
   <!-- ===============================================-->
@@ -158,7 +178,7 @@
             </div>
             <ol class="breadcrumb fs-1 ps-0 fw-bold">
               <li class="breadcrumb-item"><a class="bg-200 text-primary"
-                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdotsfor.com%2F9fb8d31a84714715b98fe103c15a05b9&text=Raising%20funds%20for%20the%20construction%20of%20a%20communication%20network%20in%20rural%20areas%20of%20Africa%20%7C%20Dots%20for%20Inc.%20%40obahiroy">Go
+                  href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdotsfor.com%2F9fb8d31a84714715b98fe103c15a05b9&text=Raising%20funds%20for%20the%20construction%20of%20a%20communication%20network%20in%20rural%20areas%20of%20Africa%20%7C%20Dots%20for%20Inc.%20%40obahiroy">Go
                   see in
                   twitter</a></li>
             </ol>

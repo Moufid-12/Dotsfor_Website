@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -29,6 +29,7 @@
   <link href="../../vendors/loaders.css/loaders.min.css" rel="stylesheet">
   <link href="../../assets/css/theme.css" rel="stylesheet" />
   <link href="../../assets/css/user.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets\css\translatehid.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -92,15 +93,33 @@
               <a class="nav-link" href="../../pages/contact.html" role="button">Contact</a>
             </li>
           </ul>
-          <a
-            class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
-          <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block" style="margin-left: 12px;">EN</a>
-          <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block" style="margin-left: 12px;">JPN</a>
-
+          <div class="d-none d-sm-block" style="margin-left: auto;">
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+              class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
+          </div>
+          <div class="d-bloc d-sm-none" style="margin-left: 12px;">
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+              class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
+          </div>
+          <div class="" style="margin-left: 12px;">
+            <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0"
+              href="javascript:void()" onclick="window.location.hash='#googtrans(en)';location.reload();">EN</a>
+          </div>
+          <div class="" style="margin-left: 12px;">
+            <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0 "
+              href="javascript:void()" onclick="window.location.hash='#googtrans(ja)';location.reload();">JPN</a>
+          </div>
         </div>
       </nav>
     </div>
   </div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
 
   <!-- ===============================================-->
   <!--    Main Content-->
@@ -126,21 +145,30 @@
         <div class="overflow-hidden mb-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
           <div data-zanim-xs='{"delay":0}'><a class="d-inline-block text-500" href="#!">Dotsfor</a>, &nbsp;<a
               class="d-inline-block text-500" href="#!">16 Feb, 2024</a></div>
-          <h4 data-zanim-xs='{"delay":0.1}'>Gathering under the Stars: Dots for’s “Cinema Night” Unites Rural Communities</h4>
+          <h4 data-zanim-xs='{"delay":0.1}'>Gathering under the Stars: Dots for’s “Cinema Night” Unites Rural
+            Communities</h4>
         </div>
         <div class="row">
           <div class="col-lg-8">
             <div class="card mb-6"> <img class="card-img-top" src="../../assets/img/cinema.jpg" alt="new image" />
               <div class="card-body p-5">
                 <p class="dropcap">
-                  At Dots for, we believe in the power of community and the importance of bringing people together. That’s why recently, we introduced “Cinema Night” – an initiative aimed at promoting our services while fostering connections in rural areas. <br>
-Through Cinema Night, we curate a selection of engaging videos from around the globe, including captivating Japanese content. What started as a simple idea has evolved into a cherished tradition, uniting people of all ages for an evening of shared entertainment. <br>
-These gatherings are opportunities for communities to come alive, to laugh, and to connect. It’s remarkable how each village, while sharing the same jovial atmosphere, creates its own unique experience. <br>
-As we witness the laughter and camaraderie atmosphere fostered by Cinema Night, we’re reminded of the profound impact our services can have on people’s lives. At Dots for, we’re committed to continuing our efforts to unleash the constraints of rural communities. <br>
+                  At Dots for, we believe in the power of community and the importance of bringing people together.
+                  That’s why recently, we introduced “Cinema Night” – an initiative aimed at promoting our services
+                  while fostering connections in rural areas. <br>
+                  Through Cinema Night, we curate a selection of engaging videos from around the globe, including
+                  captivating Japanese content. What started as a simple idea has evolved into a cherished tradition,
+                  uniting people of all ages for an evening of shared entertainment. <br>
+                  These gatherings are opportunities for communities to come alive, to laugh, and to connect. It’s
+                  remarkable how each village, while sharing the same jovial atmosphere, creates its own unique
+                  experience. <br>
+                  As we witness the laughter and camaraderie atmosphere fostered by Cinema Night, we’re reminded of the
+                  profound impact our services can have on people’s lives. At Dots for, we’re committed to continuing
+                  our efforts to unleash the constraints of rural communities. <br>
 
 
                 </p>
-                <p>#CommunityEngagement #CinemaNight #RuralEmpowerment  </p>
+                <p>#CommunityEngagement #CinemaNight #RuralEmpowerment </p>
               </div>
             </div>
             <ol class="breadcrumb fs-1 ps-0 fw-bold">
