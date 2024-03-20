@@ -86,42 +86,33 @@
             </li>
           </ul>
           <div class="d-none d-sm-block" style="margin-left: auto;">
-            <a href="#" onclick="changeLanguage('fr')"
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
               class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
           </div>
           <div class="d-bloc d-sm-none" style="margin-left: 12px;">
-            <a href="#" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
               class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
           </div>
           <div class="" style="margin-left: 12px;">
             <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0"
-              href="#" onclick="changeLanguage('fr')">EN</a>
+              href="javascript:void()" onclick="window.location.hash='#googtrans(en)';location.reload();">EN</a>
           </div>
           <div class="" style="margin-left: 12px;">
             <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0 "
-              href="#" onclick="changeLanguage('fr')">JPN</a>
+              href="javascript:void()" onclick="window.location.hash='#googtrans(ja)';location.reload();">JPN</a>
           </div>
 
         </div>
       </nav>
     </div>
   </div>
- <script>
-    function changeLanguage(lang) {
-        // Mettre à jour l'URL avec le paramètre de langue
-        window.location.hash = '#googtrans(' + lang + ')';
-        // Recharger la page pour appliquer le changement de langue
-        location.reload();
-    }
-</script>
+ <script type="text/javascript">
+		  function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+		  }
+		</script>
+		<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
-<!-- Script Google Translate -->
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-</script>
     
   <!-- ===============================================-->
   <!--    Main Content-->
