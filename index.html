@@ -83,16 +83,34 @@
               <a class="nav-link" href="./public/pages/contact.html" role="button">Contact</a>
             </li>
           </ul>
-          <a
-            class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
-          <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block" style="margin-left: 12px;">EN</a>
-          <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block" style="margin-left: 12px;">JPN</a>
+          <div class="d-none d-sm-block" style="margin-left: auto;">
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+              class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
+          </div>
+          <div class="d-bloc d-sm-none" style="margin-left: 12px;">
+            <a href="javascript:void()" onclick="window.location.hash='#googtrans(fr)';location.reload();"
+              class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block d-lg-inline-block ms-auto my-3 my-lg-0">FR</a>
+          </div>
+          <div class="" style="margin-left: 12px;">
+            <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0"
+              href="javascript:void()" onclick="window.location.hash='#googtrans(en)';location.reload();">EN</a>
+          </div>
+          <div class="" style="margin-left: 12px;">
+            <a class="btn btn-outline-primary rounded-pill btn-sm border-2 d-block my-3 my-lg-0 "
+              href="javascript:void()" onclick="window.location.hash='#googtrans(ja)';location.reload();">JPN</a>
+          </div>
 
         </div>
       </nav>
     </div>
   </div>
-
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'fr' }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
   <!-- ===============================================-->
   <!--    Main Content-->
   <!-- ===============================================-->
@@ -424,7 +442,7 @@
                 a whole is less than 30%, but traditional telecommunication companies have little incentive to improve
                 this situation from the perspective of profitability,
                 and this negative situation will not improve anytime soon.</p>
-              <img data-zanim='{"delay":0.2}' class="radius-secondary w-100" src="./public/assets/img/mission1.png"
+              <img data-zanim='{"delay":0.2}' class="radius-secondary img-fluid" src="./public/assets/img/mission1.png"
                 alt="">
               <p class="column-lg-2 dropcap">Dots for Inc. provides highly convenient digital services to these rural
                 users with our unique technology. The last 1 mile internet connection is still an issue even in
@@ -764,7 +782,7 @@
       <!--/.bg-holder-->
 
       <div class="container">
-        <div class="d-flex">
+        <div class="d-flex text-center">
           <div class="flex-1">
             <h2 class="text-secondary fs-3 fs-lg-4">
               Take the right step,<br /><span class="text-white">do the big things.</span>
@@ -795,7 +813,7 @@
                   4
                 </div>
                 <h6 class="fs-0 text-white" data-zanim-xs='{"delay":0.2}'>
-                  Country
+                  Countries
                 </h6>
               </div>
               <div class="overflow-hidden col col-lg-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
@@ -842,7 +860,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mt-4 mt-sm-0">
             <div class="card h-100">
-              <img class="card-img-top" src="public/assets/img/team17.jpg" alt="Sho Nakata" />
+              <img class="card-img-top" src="public/assets/img/team17.jpg" alt="Rie TONOMURA" />
               <div class="card-body" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
                   <h5 data-zanim-xs='{"delay":0}'>Rie TONOMURA</h5>
@@ -873,10 +891,10 @@
         </div>
         <div class="overflow-hidden">
           <div data-zanim-xs='{"delay":0.2}'>
-            <a class="btn btn-primary me-3 mt-3" href="public/pages/team.html">See other members<span
+            <a class="btn btn-primary me-3 mt-3" href="public/pages/team.html">Our members<span
                 class="fas fa-chevron-right ms-2"></span></a><a class="btn btn-warning mt-3"
               href="public/pages/galery.html">Our Gallery
-              us<span class="fas fa-chevron-right ms-2"></span></a>
+              <span class="fas fa-chevron-right ms-2"></span></a>
           </div>
         </div>
       </div>
@@ -927,7 +945,7 @@
                 </div>
                 <div class="overflow-hidden">
                   <p class="text-500" data-zanim-xs='{"delay":0.1}'>
-                    09 Novembre 2023
+                    09 Nov 2023
                   </p>
                 </div>
                 <div class="overflow-hidden">
@@ -1051,7 +1069,7 @@
         </div>
         <div class="col-sm-6 mt-3 mt-sm-0">
           <p class="lh-lg mb-0 fw-semi-bold">
-            &copy; Copyright 2021 dotsfor Inc.
+            &copy; Copyright 2021 - 2024 <br> Dotsfor Inc.
           </p>
         </div>
 
