@@ -5457,6 +5457,9 @@ textarea.form-control-lg {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
+.team .card-img-top {
+  border-radius: 0.625rem;
+}
 
 .card-img,
 .card-img-bottom {
