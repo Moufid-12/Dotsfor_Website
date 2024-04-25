@@ -17648,10 +17648,10 @@ ol {
   width: 100%;
   height: 0.063rem;
   border-radius: 0.188rem;
-  background-color: currentColor;
+  background-color: #913D23;
 }
 .hamburger.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: #913D23;
 }
 
 .hamburger-inner::before {
